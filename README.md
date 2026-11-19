@@ -22,3 +22,13 @@ git show -s --format=fuller HEAD
 ```
 
 My email is now exposed for everyone to abuse.
+
+## Trying a gibrish email
+
+We could just type a bullshit mail to not expose our email:
+
+```bash
+git config user.email "not-a-real@email.fugazi"
+```
+
+In this case github will not find a profile to attach the commit to and we will see an empty avatar. When we try and add an extra layer of security and sign our commits we will see that it won't work
